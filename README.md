@@ -9,6 +9,7 @@ Projekt wykorzystuje Spring Data JPA oraz bazę danych H2 (in-memory).
 - Spring Web
 - Spring Data JPA
 - H2 Database (domyślnie w pamięci)
+- Jakarta Bean Validation
 
 🧩 Struktura projektu
 

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class BookController {
 
@@ -17,7 +19,7 @@ public class BookController {
 	}
 	
 	@PostMapping("/books")
-	public void addBook(@RequestBody Book book) {
+	public void addBook(@Valid @RequestBody Book book) {
 		bookService.addBook(book);
 	}
 	
